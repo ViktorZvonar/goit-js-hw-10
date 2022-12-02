@@ -26,6 +26,7 @@ ul {
 }
 
 p {
+  padding: 0;
   margin: 0;
 }
 
@@ -34,20 +35,23 @@ span {
 }
 
 div {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .country__item {
+  list-style: none;
   display: flex;
-  padding: 0;
-  margin-bottom: 10px;
   align-items: center;
+}
+
+.country__item:not(:last-child) {
+  margin: 0 0 20px;
 }
 
 .country__name {
   margin: 0 10px;
 }
 
-.info__item {
-  margin-bottom: 5px;
+.info__item:not(:last-child) {
+  margin: 0 0 20px;
 }
